@@ -1,0 +1,27 @@
+<%= form_for @cover, html: { multipart: true } do |f| %>
+  <% if cover.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cover.errors.count, "error") %> prohibited this cover from being saved:</h2>
+
+      <ul>
+      <% cover.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+  <%= f.label :image, "Obraz" %>
+  <%= f.file_field :image, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

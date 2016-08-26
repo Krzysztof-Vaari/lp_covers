@@ -1,0 +1,18 @@
+  <div class="row">
+   <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+     <div class="panel-heading center"><%= image_tag @cover.image.url(:medium) %><br/>
+     </div>
+     <div class="panel-body">
+  <strong>Opis:</strong>
+  <%= @cover.description %>
+</p>
+<br/><%= @cover.user.name %><br/>
+<% if @cover.user == current_user %>
+<%= link_to 'Edycja', edit_cover_path(@cover) %> |
+<%end%>
+<%= link_to 'Wstecz', covers_path %>
+    </div>
+   </div>
+  </div>
+</div>
