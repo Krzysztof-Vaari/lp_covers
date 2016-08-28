@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: vaari1961
+  api_key: '289678561799787'
+  api_secret: tm-g0RQAYbI2jqKxgVItrHe58JI
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: vaari1961
+  api_key: '289678561799787'
+  api_secret: tm-g0RQAYbI2jqKxgVItrHe58JI
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: vaari1961
+  api_key: '289678561799787'
+  api_secret: tm-g0RQAYbI2jqKxgVItrHe58JI
+  enhance_image_tag: true
+  static_image_support: false
