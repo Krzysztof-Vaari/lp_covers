@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :covers
-  resources :pins
   devise_for :users
   root 'covers#index'
 
